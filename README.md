@@ -11,7 +11,9 @@ The dataset is taken from SICAS Medical Image Repisotry, BRATS 2015: Brain Tumou
 ### Dataset Preprocessing
 N4ITK bias correction is applied to T1 and T1_C modalitites. Each of the four modalities are normalized by subtracting the corresponding mean and dividing by the corresponding standard deviation. All the 155 slices from each of the four modalities(T1,T1C,T2 and Flair) are extracted. The slices from the four modalities are stacked together to form input of 240x240x4.
 ### CNN Models 
+The inputs to the CNN are given as patches which are created by converting the 3D MRI scans into 2D. These patches are used to train the CNN to predict the class of the pixel centered at the patch.  
 #### Two-pathway CNN
+
 
 
 #### Input Cascade CNN
