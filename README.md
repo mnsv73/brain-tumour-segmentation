@@ -13,9 +13,9 @@ N4ITK bias correction is applied to T1 and T1_C modalitites. Each of the four mo
 ### CNN Models 
 The inputs to the CNN are given as patches which are created by converting the 3D MRI scans into 2D. These patches are used to train the CNN to predict the class of the pixel centered at the patch.  
 #### Two-pathway CNN
+![Screenshot (116)](https://user-images.githubusercontent.com/64637263/82737775-0af59580-9d51-11ea-9391-fada21a6954f.png)
 
-
-
+This CNN takes a patch of dimension 33x33x4 from the input and sends it to two pathways: one focuses on details on the region around middle pixel  while the other focuses where the patch is located in the brain. The output of the CNN is the label of the central pixel, one hot encoded. 
 #### Input Cascade CNN
 
 #### Local Cascade CNN
