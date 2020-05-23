@@ -5,7 +5,7 @@
 ---
 
 ### About the dataset
-The dataset is taken from SICAS Medical Image Repisotry, BRATS 2015: Brain Tumour Image Segemntation Challenge.
+The dataset is taken from SICAS Medical Image Repisotry, BRATS 2015: Brain Tumour Image Segemntation Challenge. More information on the dataset can be viewed from the Dataset_Information.ipynb.
 
 ---
 
