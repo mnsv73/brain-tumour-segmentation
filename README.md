@@ -1,4 +1,5 @@
 # Brain Tumour Segmentation
+This project implements the CNN architectures for brain tumour segmentation described in the research paper Havaei et al.(2017). The paper can be accessed from the link  https://arxiv.org/pdf/1505.03540v3.pdf.
 
 ### Research Paper Summary
 The main objective of Brain Tumor Segmentation is to identify the exact location and extension of tumor which can help in providing better treatment. This is done using the per-pixel classification into one of the five labels, namely healthy voxels, edema, necrosis, non-enhancing and enhancing tumors. Based on the presence of these, the tumors can be categorised into complete tumor, tumor core and enhanced tumor. 
