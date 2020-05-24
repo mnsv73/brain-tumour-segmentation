@@ -1,11 +1,12 @@
 # Brain Tumour Segmentation
 
 ### Research Paper Summary
+The main objective of Brain Tumor Segmentation is to identify the exact location and extension of tumor which can help in providing better treatment. This is done using the per-pixel classification into one of the five labels, namely healthy voxels, edema, necrosis, non-enhancing and enhancing tumors. Based on the presence of these, the tumors can be categorised into complete tumor, tumor core and enhanced tumor. 
 
 ---
 
 ### About the dataset
-The dataset is taken from SICAS Medical Image Repisotry, BRATS 2015: Brain Tumour Image Segemntation Challenge. It has MRI scans of 274 brains of which 220 contain HGG(High Grade Gliomas) and 54 contain LGG(Low Grade Gliomas). Each brain in the dataset has four Modalities(T1,T2, T1_C and Flair). The shape of each of these modalities as numpy arrays is 240x240x155. More information on the dataset can be viewed from the Dataset_Information.ipynb.
+The dataset is taken from SICAS Medical Image Repository, BRATS 2015: Brain Tumour Image Segemntation Challenge. It has MRI scans of 274 brains of which 220 contain HGG(High Grade Gliomas) and 54 contain LGG(Low Grade Gliomas). Each brain in the dataset has four Modalities(T1,T2, T1_C and Flair). The shape of each of these modalities as numpy arrays is 240x240x155. More information on the dataset can be viewed from the Dataset_Information.ipynb.
 
 ---
 ### Dataset Preprocessing
@@ -17,11 +18,11 @@ The inputs to the CNN are given as patches which are created by converting the 3
 #### Two-pathway CNN
 ![Screenshot (116)](https://user-images.githubusercontent.com/64637263/82737775-0af59580-9d51-11ea-9391-fada21a6954f.png)
 
-This CNN takes a patch of dimension 33x33x4 from the input and sends it to two pathways: one focuses on details on the region around middle pixel  while the other focuses where the patch is located in the brain. The output of the CNN is the label of the central pixel, one hot encoded. 
+This CNN takes a patch of dimension 33x33x4 from the input and sends it to two pathways: one focuses on details on the region around middle pixel  while the other focuses where the patch is located in the brain. The output of the CNN is the label of the central pixel, one hot encoded. This whole architecture is depicted as a green box in the subsequent CNN architectures.
 #### Input Cascade CNN
 ![Screenshot (118)](https://user-images.githubusercontent.com/64637263/82737976-29a85c00-9d52-11ea-9787-399806cf1aaa.png)
 
-CNNs often predict each label too far from each other. To prevent this, the above architecture feeds the output of the first Two-way Path CNN as an additional input directly into the second Two-way Path CNN as shown in the figure. This whole architecture is referred to as Input Cascade CNN. 
+CNNs often predict each label too far from each other. To prevent this, the above architecture feeds the output of the first Two-pathway CNN as an additional input directly into the second Two-pathway CNN as shown in the figure. This whole architecture is referred to as Input Cascade CNN. 
 
 #### Local Cascade CNN
 ![Screenshot (119)](https://user-images.githubusercontent.com/64637263/82738078-d2ef5200-9d52-11ea-99a9-b8db388fac46.png)
@@ -31,7 +32,7 @@ In this architecture the output of the first CNN is concatenated to the hidden l
 ---
 
 ### Training 
-To account for the high imbalance in the dataset, a **two-phase training procedure** was employed.
+To account for the high imbalance in the dataset, a **two-phase training procedure** was employed. The steps followed in it are given below:
 - The input patches were constructed in such a way that all the labels were equally likely.
 - These patches were passed to the CNN in the first training phase.
 - The weights of all layers except the output layer were declared as non-trainable.
@@ -50,6 +51,8 @@ Stochastic Gradient Descent(SGD) with a learning rate of 0.005 and momentum fact
 
 ### Results
 Precision, recall and dice coefficient are the metrics used for evaluation. 
+
+
 
 ---
 
