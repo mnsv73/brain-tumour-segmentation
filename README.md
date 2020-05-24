@@ -54,7 +54,8 @@ Precision, recall and dice coefficient are the metrics used for evaluation.
 
 ![Screenshot (126)](https://user-images.githubusercontent.com/64637263/82751910-2657b380-9dd8-11ea-8956-9984abcd6154.png)
 
-![Screenshot (128)](https://user-images.githubusercontent.com/64637263/82751984-b5fd6200-9dd8-11ea-9cf0-acaf91d6678b.png)
+![Screenshot (133)](https://user-images.githubusercontent.com/64637263/82752151-aaf70180-9dd9-11ea-8345-e716eddb1676.png)
+
 
 ---
 
