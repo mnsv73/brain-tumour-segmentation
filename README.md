@@ -52,7 +52,9 @@ Stochastic Gradient Descent(SGD) with a learning rate of 0.005 and momentum fact
 ### Results
 Precision, recall and dice coefficient are the metrics used for evaluation. 
 
+![Screenshot (122)](https://user-images.githubusercontent.com/64637263/82751644-3e2e3800-9dd6-11ea-92b0-a8d1006f1084.png)
 
+![Screenshot (124)](https://user-images.githubusercontent.com/64637263/82751818-90bc2400-9dd7-11ea-9640-c2165e89db0f.png)
 
 ---
 
