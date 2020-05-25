@@ -63,7 +63,7 @@ Precision, recall and dice coefficient are the metrics used for evaluation.
 
 ### Instructions to run the code
 Download the pre-trained models and weights stored as json file and h5 file respectively along with the LocalReTrain and InputCascadeCNNReTrain notebooks. 
-Change the hard-coded path and use the notebooks for either viewing the segmented images or for transfer learning.
+Change the hard-coded file path and use the notebooks for either viewing the segmented images or for transfer learning.
 
 ---
 
