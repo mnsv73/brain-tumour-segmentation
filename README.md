@@ -46,8 +46,6 @@ Categorical Cross Entropy is used as we are dealing with multi-label classificat
 #### Optimiser
 Stochastic Gradient Descent(SGD) with a learning rate of 0.005 and momentum factor of 0.5 are used as suggested in the paper.
 
-### Issue Faced
-
 ---
 
 ### Results
@@ -56,11 +54,6 @@ Precision, recall and dice coefficient are the metrics used for evaluation.
 ![Screenshot (126)](https://user-images.githubusercontent.com/64637263/82751910-2657b380-9dd8-11ea-8956-9984abcd6154.png)
 
 ![Screenshot (133)](https://user-images.githubusercontent.com/64637263/82752151-aaf70180-9dd9-11ea-8345-e716eddb1676.png)
-
-
----
-
-### Instructions to run the code
 
 ---
 
