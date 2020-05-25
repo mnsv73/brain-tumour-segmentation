@@ -56,9 +56,10 @@ Due to computational and hardware limitations, our model was trained on barely s
 ### Results
 Precision, recall and dice coefficient are the metrics used for evaluation. 
 
-![image](https://user-images.githubusercontent.com/44316882/82829158-3488fb00-9ed0-11ea-9497-cffe69f3c2f2.png)
+![Screenshot (15)](https://user-images.githubusercontent.com/44316882/82829841-deb55280-9ed1-11ea-8b13-7a58b82f4ae1.png)
 
-![image](https://user-images.githubusercontent.com/44316882/82829254-7619a600-9ed0-11ea-9b14-e4f71bb2a2ab.png)
+![Screenshot (14)](https://user-images.githubusercontent.com/44316882/82829884-fa205d80-9ed1-11ea-9a73-c4f31bade471.png)
+
 
 ---
 
