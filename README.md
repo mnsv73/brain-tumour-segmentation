@@ -47,7 +47,7 @@ Categorical Cross Entropy is used as we are dealing with multi-label classificat
 Stochastic Gradient Descent(SGD) with a learning rate of 0.005 and momentum factor of 0.5 are used as suggested in the paper.
 
 ### Issue Faced
-There was too much regularization in the paper as the dataset implemented was 9 times smaller. To avoid overfitting, we trained both the models with as much data as possible.
+There was too much regularization in the paper as the dataset implemented was 9 times smaller. Too much regularisation casued our models to severely underfit. To avoid overfitting, we trained both the models with as much data as possible.
 
 ---
 
